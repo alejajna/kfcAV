@@ -15,7 +15,7 @@
   <!-- título  -->
   <title>KFC</title>
 </head>
-<body>
+<body class="theme-light" id="body">
   <!-- section nav  -->
   <nav>
     <div class="container">
@@ -24,18 +24,18 @@
           <img src="./images/logokfc.png" width="75px" alt="logo">
         </div>
         <div class="col-md-4">
-          <select name="idioma" id="language">
+          <select onchange="seleccioneidioma()" name="idioma" id="language">
             <option value="">seleccione idioma</option>
             <option value="es">español</option>
             <option value="en">inglés</option>
           </select>
         </div>
         <div class="col-md-4">
-          <select name="tema" id="theme">
+          <select onchange="themecualquier()" name="tema" id="theme">
             <option value="">seleccione tema</option>
-            <option value="oscuro">oscuro</option>
             <option value="claro">claro</option>
-            <option value="libre">libre</option>
+            <option value="oscuro">oscuro</option>
+
           </select>
         </div>
       </div>
@@ -50,9 +50,12 @@
                 <div class="card">
                     <img src="./images/hamburguesa-1.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h6 class="card-title">Hamburguesa-1 </h6>
-                      <p class="card-text">Hamburguesa-1 $17.900</p>
-                      <a href="#" class="btn btn-primary">Comprar</a>
+                      <h6 class="card-title">$8.900</h6>
+                      <h5  class="card-text">BBQ Crunch</h5>
+                      <p id="pp"> 1 Sandwich BBQ Crunch (1 Filete de pollo apanado)</p>
+                     
+                      <br><br>
+                      <a href="#" class="btn btn-primary"> <img class="img-btn" src="images/button-1.png" alt="">Comprar</a>
                     </div>
                 </div>
             </div>
@@ -60,8 +63,8 @@
                 <div class="card">
                     <img src="./images/hamburguesa-2.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h6 class="card-title">Hamburguesa-2</h6>
-                      <p class="card-text">Hamburguesa-1 $27.900</p>
+                      <h6 class="card-title">$15.900</h6>
+                      <p class="card-text">Kentucky Sandwich</p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div></div>
@@ -69,7 +72,7 @@
               <div class="card">
                 <img src="./images/hamburguesa-3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h6 class="card-t3tle">Hamburguesa-3</h6>
+                      <h6 class="card-title">Hamburguesa-3</h6>
                       <p class="card-text">Hamburguesa-3 $37.900</p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
@@ -79,6 +82,7 @@
                     <div class="card-body">
                       <h6 class="card-title">Hamburguesa-4</h6>
                       <p class="card-text">Hamburguesa-4 $17.900</p>
+
                       <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
@@ -120,5 +124,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 </html>
